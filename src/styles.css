@@ -1,0 +1,47 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.flashcard-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.flashcard {
+  width: 200px;
+  height: 120px;
+  background-color: #421055;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+input {
+  margin-right: 10px;
+  padding: 5px;
+
+}
+
+.app-title {
+  border: 3px solid #4B0082;     
+  padding: 10px 20px;            
+  display: inline-block;       
+  border-radius: 8px;            
+  color: #4B0082;                 
+  background-color: #E6E6FA;     
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3); 
+  font-size: 2rem;                
+  font-weight: bold;  
+}           
