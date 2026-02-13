@@ -18,14 +18,32 @@ export default function App() {
 
   
   const addCard = (card) => {
-    setCards((prevCards) => [...prevCards, card]); 
+    setCards((prevCards) => [...prevCards, card]);
+  };
+
+  
+  const shuffleCards = () => {
+    setCards((prevCards) => {
+      const shuffled = [...prevCards];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    });
   };
 
   return (
-  <div className="App">
-    <h1 className="app-title">Flashcard Study App</h1>
-    <AddCardForm addCard={addCard} />
-    <FlashcardList cards={cards} />
-  </div>
-);
+    <div className="App">
+      <h1 className="app-title">Flashcard Study App</h1>
+
+    
+      <AddCardForm addCard={addCard} />
+
+      <button onClick={shuffleCards} className="shuffle-btn">Shuffle Cards</button>
+    
+  
+      <FlashcardList cards={cards} />
+    </div>
+  );
 }

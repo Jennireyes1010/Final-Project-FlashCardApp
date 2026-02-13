@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 
 export default function AddCardForm({ addCard }) {
@@ -7,17 +6,15 @@ export default function AddCardForm({ addCard }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (!question || !answer) return;
 
     addCard({ question, answer });
-
     setQuestion("");
     setAnswer("");
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="add-card-form">
       <input
         type="text"
         placeholder="Enter question"
