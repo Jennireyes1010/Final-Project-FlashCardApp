@@ -35,11 +35,11 @@ input {
 }
 
 .app-title {
-  border: 3px solid #4B0082;     
+  border: 3px solid #000000;     
   padding: 10px 20px;            
   display: inline-block;       
   border-radius: 8px;            
-  color: #4B0082;                 
+  color: #474747;                 
   background-color: #E6E6FA;     
   box-shadow: 2px 2px 8px rgba(0,0,0,0.3); 
   font-size: 2rem;                
