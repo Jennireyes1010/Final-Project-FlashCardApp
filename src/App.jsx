@@ -9,7 +9,11 @@ export default function App() {
     { question: "What is JSX?", answer: "A syntax extension for JavaScript." },
     { question: "What is a component?", answer: "Reusable piece of UI in React." },
     { question: "What is state?", answer: "A way to manage data in a component." },
-    { question: "What is a prop?", answer: "A way to pass data to components." }
+    { question: "What is a prop?", answer: "A way to pass data to components." },
+    { question: "What is the virtual DOM?", answer: "A lightweight copy of the real DOM." },
+    { question: "What is a hook?", answer: "A function that lets you use state and other React features in functional components." },
+    { question: "What is the useEffect hook?", answer: "A hook that lets you perform side effects in functional components." },
+    { question: "What is the useState hook?", answer: "A hook that lets you add state to functional components." }
   ]);
 
   
